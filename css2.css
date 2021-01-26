@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis:400,700");
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+:root {
+  --main-white-color: #f2f2f2;
+  --main-black-color: black;
+  --main-purple-color: #9e89b8;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#navbar {
+  list-style: none;
+  align-items: center;
+}
+
+#HokabentoStudio {
+  margin-left: 30px;
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/*header.logo {
+
+}*/
+
+
+/*body {
+  font: 16px/1.5 "Tahoma", sans-serif;*/
+  /*IE FIX*/
+  /*display: flex;
+  flex-direction: column;*/
+}
+
+#Logo {
+  float: right;
+  opacity: 1.0;
+}
+/* CONTAINER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.wrapper > * {
+  padding: 20px;
+}
+
+
+/* HEADER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-header {
+  background: var(--main-white-color);
+/*background-image: url(logo.png);
+  background-size: cover;*/
+}
+.page-header nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font: 16px/1.5 "Tahoma", sans-serif;
+
+}
+
+.page-header ul {
+  display: flex;
+  order: 1;
+  width: 100%;
+  margin-top: 15px;
+  background-image: url(logo.png);
+}
+
+.page-header ul li:not(:last-child) {
+  padding-right: 15px;
+}
+
+.page-header .cta-contact {
+  font-family: inherit;
+  font-size: 1.2rem;
+  padding: 5px 18px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+
+/* MAIN
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-main {
+  display: flex;
+  background-image: url("img/bgTile.png");
+  background-size: 50px, 50px;
+  background-repeat: repeat;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 350px;
+  background-blend-mode: luminosity;
+
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding-top: 30px;
+  font-size: 2rem;
+  font-family: 'Indie Flower', cursive;
+
+}
+
+#work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#team {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+}
+
+#funding {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+}
+
+#contact {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(img/Ebi-san_outline.png);
+  background-position: left;
+  background-size: 12%;
+  background-repeat: no-repeat;
+
+}
+
+.slogan-container {
+  display: flex;
+  justify-content: center;
+  padding: 50px 50px;
+  align-items: center;
+  flex-direction: row;
+  background: rgba(255, 255, 255, 0.5);
+  background-image: url(img/Maki-san_outline2.png);
+  background-size: 20%;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+#slogan {
+
+  font-size: 2rem;
+  font-family: 'Indie Flower', cursive;
+}
+
+#maki {
+padding-right: 20px;
+padding-bottom: 20px;
+
+}
+
+.page-main div {
+}
+
+.page-main h1 {
+  margin-bottom: 20px;
+}
+
+.page-main p + p {
+  margin-top: 10px;
+}
+
+
+
+/* FOOTER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-footer {
+  display: flex;
+  flex-direction: column-reverse;
+  background: var(--main-white-color);
+}
+
+.page-footer ul {
+  display: flex;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.page-footer ul li:not(:last-child) {
+  margin-right: 20px;
+}
+
+
+/* MQ
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media screen and (min-width: 550px) {
+  .page-header ul {
+    width: auto;
+    margin-top: 0;
+  }
+
+  .page-header .cta-contact {
+    order: 1;
+  }
+
+  .page-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-footer ul {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+
+  .page-main {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
