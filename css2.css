@@ -29,8 +29,9 @@ button {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
   color: inherit;
+  text-align: center;
 }
 /*header.logo {
 
@@ -42,7 +43,7 @@ a {
   /*IE FIX*/
   /*display: flex;
   flex-direction: column;*/
-}
+/*}*/
 
 #Logo {
   float: right;
@@ -109,6 +110,7 @@ a {
   flex-grow: 1;
   min-height: 350px;
   background-blend-mode: luminosity;
+
 }
 
 #content {
